@@ -9,6 +9,17 @@ let points = [
    { x: 3, y: -5 },
 ];
 
+let points2 = [
+   { x: 1, y: 2 },
+   { x: 1, y: 2 },
+   { x: 1, y: 3 },
+   { x: 3, y: 5 },
+   { x: 5, y: 3 },
+   { x: 1, y: 5 },
+   { x: 6, y: 1 },
+   { x: 1, y: 1 },
+];
+
 function findParallelLines(points) {
    let parallelCountX = 0;
    let parallelCountY = 0;
@@ -35,8 +46,8 @@ function findParallelLines(points) {
    return { parallelCountX, parallelCountY };
 }
 
-let parallelLineCount = findParallelLines(points);
-points.forEach((element) => {
+let parallelLineCount = findParallelLines(points2);
+points2.forEach((element) => {
    console.log('x: ', element.x, 'y: ', element.y);
 });
 
